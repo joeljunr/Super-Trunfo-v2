@@ -12,7 +12,7 @@ int main(){
     
     printf("Seja Bem Vindo ao Super Trunfo! \n");
     printf("Digite seu nome: \n");
-    scanf("%s", &nomedapessoa);
+    scanf("%s", nomedapessoa);
     printf("Seja Bem Vindo, %s!\n", nomedapessoa);
 
     printf("Digite o nome de um país: \n");
@@ -96,7 +96,7 @@ int main(){
     printf("3 - PIB \n");
     printf("4 - Número de Pontos Turísticos \n");
     printf("5 - Densidade Populacional \n");
-    printf(" Digite a opção desejada:%d", opcaomenu);
+    printf(" Digite a opção desejada:\n");
     scanf("%d", &opcaomenu);
     if (opcaomenu ==1){
         if (populacao1 > populacao2){
@@ -133,7 +133,7 @@ int main(){
     }else if (opcaomenu ==5){
         if (densidadepopulacional1 < densidadepopulacional2){
             printf(" O pais %s GANHOU, pois tem a densidade populacional de %.2f e é menor que a densidade populacional de %s, que tem %.2f de densidade populacional ",nomedacidade1,densidadepopulacional1,nomedacidade2,densidadepopulacional2);
-        }else if (densidadepopulacional1 < densidadepopulacional2){
+        }else if (densidadepopulacional1 > densidadepopulacional2){
             printf(" O pais %s GANHOU, pois tem a densidade populacional de %.2f e é menor que a densidade populacional de %s, que tem %.2f de densidade populacional ",nomedacidade2,densidadepopulacional2,nomedacidade1,densidadepopulacional1);
         }else{
             printf(" Os dois países tem a mesma densidade populacional de %.2f ", densidadepopulacional1);
